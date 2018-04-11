@@ -181,7 +181,7 @@ $customers = Customer::findAll([
 ]);
 ```
 
-> Note: ni [[yii\db\ActiveRecord::findOne()]], ni [[yii\db\ActiveQuery::one()]] n'ajoutent `LIMIT 1` à l'instruction SQL générée. Si votre requête peut retourner plusieurs lignes de données, vous devez appeler `limit(1)` explicitement pour améliorer la performance, p. ex., `Customer::find()->limit(1)->one()`.
+> Note: ni [[yii\db\ActiveRecord::findOne()]], ni [[yii\db\ActiveQuery::one()]] n'ajoutent PAS `LIMIT 1` à l'instruction SQL générée. Si votre requête peut retourner plusieurs lignes de données, vous devez appeler `limit(1)` explicitement pour améliorer la performance, p. ex., `Customer::find()->limit(1)->one()`.
 
 En plus d'utiliser les méthodes de construction de requête, vous pouvez aussi écrire du SQL brut pour effectuer une requête de données et vous servir des résultats pour remplir des objets enregistrements actifs. Vous pouvez le faire en appelant la méthode [[yii\db\ActiveRecord::findBySql()]] :
 
