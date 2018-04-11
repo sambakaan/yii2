@@ -417,7 +417,7 @@ Dans l'exemple précédent, nous résumons les différents cycles de vie d'enreg
 
 ### Cycle de vie d'une nouvelle instance <span id="new-instance-life-cycle"></span>
 
-Losque vous créez un nouvel enregistrement actif via l'opérateur `new`, le cycle suivant se réalise :
+ Lorsque vous créez un nouvel enregistrement actif via l'opérateur `new`, le cycle suivant se réalise :
 
 1. Constructeur de la classe.
 2. [[yii\db\ActiveRecord::init()|init()]]: déclenche un événement [[yii\db\ActiveRecord::EVENT_INIT|EVENT_INIT]].
